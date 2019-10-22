@@ -1,12 +1,16 @@
 import React from 'react';
+import Counter from './components/counter';
+import TodoList from './components/todoList';
 
-function App(props) {
-  console.log(props)
-  return (
-    <div className="App">
-
-    </div>
-  );
+class App extends React.Component{
+  render(){
+    return (
+      <div>
+        <Counter />
+        <TodoList />
+      </div>
+    )
+  }
 }
 
 export default App;

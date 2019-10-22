@@ -5,13 +5,11 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import Store from './store';
 import { Provider } from 'mobx-react'
-import DevTools from 'mobx-react-devtools'
 
 let store = new Store()
 
 ReactDOM.render(<Provider store={store}>
   <App />
-  <DevTools />
 </Provider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
