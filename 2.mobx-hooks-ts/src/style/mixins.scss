@@ -1,0 +1,34 @@
+/* 背景图片两倍三倍 */
+@mixin bg-image($url) {
+  background-image: url($url + "@2x.png");
+  @media (-webkit-min-device-pixel-ratio: 3) {
+    background-image: url($url + "@3x.png");
+  }
+}
+
+/* 1px处理 */
+// @mixin border-1px($direction, $color){
+//   #{$direction}: 1px solid $color; /* no */
+//   @media (-webkit-min-device-pixel-ratio: 2) {
+//     #{$direction}: 0.5px solid $color;  /* no */
+//   }
+// }
+
+/* 单行多行 */
+@mixin lines($count) {
+  @if $count > 1 {
+    text-overflow: ellipsis;
+    -moz-line-clamp: $count;
+    -webkit-line-clamp: $count;
+    display: -moz-box;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    overflow: hidden;
+  }
+  @if $count <= 1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

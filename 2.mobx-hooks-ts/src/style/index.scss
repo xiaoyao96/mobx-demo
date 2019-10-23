@@ -1,0 +1,61 @@
+// /* 样式重置 */
+// html,
+// body,
+// ul,
+// li,
+// img,
+// a,
+// p,
+// div,
+// button,
+// input,
+// pre,
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   padding: 0;
+//   margin: 0;
+//   border: none;
+//   outline: none;
+//   background-color: transparent;
+//   /* 去除移动端特有的点击高亮效果 */
+//   -webkit-tap-highlight-color: transparent;
+// }
+// body,
+// html {
+//   -webkit-overflow-scrolling: touch;
+// }
+// body {
+//   font-family: PingFangSC, sans-serif;
+// }
+// a,
+// a:hover {
+//   text-decoration: none;
+// }
+// ul {
+//   list-style: none;
+// }
+// .clearfix::before,
+// .clearfix::after {
+//   content: "";
+//   display: block;
+//   height: 0;
+//   line-height: 0px;
+//   clear: both;
+//   visibility: hidden;
+// }
+
+// [hidden] {
+//   display: none !important;
+// }
+
+// #root {
+//   max-width: 540px; /* no */
+//   min-height: 100vh;
+// }
+// .toast_wrapper {
+//   bottom: 300px !important;
+// }
