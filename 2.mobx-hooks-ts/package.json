@@ -19,7 +19,7 @@
 		"@typescript-eslint/parser": "1.6.0",
 		"@wnl/ui": "^1.4.6",
 		"@wnl/util": "^1.2.5",
-		"axios": "^0.19.0",
+		"axios": "^0.21.1",
 		"babel-eslint": "10.0.1",
 		"babel-jest": "^24.8.0",
 		"babel-loader": "8.0.5",
